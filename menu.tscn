@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dsbsc7iprxg1e"]
+
+[ext_resource type="AudioStream" uid="uid://ctumgipo22rfk" path="res://Nintendo DSi - Nintendo DSi Shop Theme [tsHHRewPyF4].mp3" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://c6i3tkq0yul5d" path="res://menu.gd" id="1_mae5d"]
+[ext_resource type="Texture2D" uid="uid://ch5u67530pw35" path="res://Untitled-1.png" id="2_ouk20"]
+
+[node name="Menu" type="Control" unique_id=92452401]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mae5d")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=804726139]
+position = Vector2(576, 324)
+texture = ExtResource("2_ouk20")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=151398150]
+stream = ExtResource("1_lti8b")
+pitch_scale = 1.05
+autoplay = true
+parameters/looping = true
+
+[node name="Button" type="Button" parent="." unique_id=2076260033]
+layout_mode = 0
+offset_left = 317.0
+offset_top = 600.0
+offset_right = 468.0
+offset_bottom = 631.0
+text = "Play"
+
+[node name="Button2" type="Button" parent="." unique_id=779374304]
+layout_mode = 0
+offset_left = 1005.0
+offset_top = -17.0
+offset_right = 1164.0
+offset_bottom = 66.0
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

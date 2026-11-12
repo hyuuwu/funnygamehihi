@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ctumgipo22rfk"
+path="res://.godot/imported/Nintendo DSi - Nintendo DSi Shop Theme [tsHHRewPyF4].mp3-9160f0176d7b4988ecaef3a1060738af.mp3str"
+
+[deps]
+
+source_file="res://Nintendo DSi - Nintendo DSi Shop Theme [tsHHRewPyF4].mp3"
+dest_files=["res://.godot/imported/Nintendo DSi - Nintendo DSi Shop Theme [tsHHRewPyF4].mp3-9160f0176d7b4988ecaef3a1060738af.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

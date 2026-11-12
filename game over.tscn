@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://yqa6qfaqx3xn"]
+
+[ext_resource type="Script" uid="uid://ss33kxm7fhsh" path="res://game_over.gd" id="1_5b4wn"]
+[ext_resource type="Texture2D" uid="uid://8yp4euvo534n" path="res://psd.png" id="1_v7q4x"]
+[ext_resource type="AudioStream" uid="uid://b8e1l0gtkwb4g" path="res://Game Over Theme Undertale [Fy0gYzKIv1g].mp3" id="2_5b4wn"]
+
+[node name="Control" type="Control" unique_id=1193775976]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5b4wn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=979211549]
+position = Vector2(576, 324)
+texture = ExtResource("1_v7q4x")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1441976460]
+stream = ExtResource("2_5b4wn")
+volume_db = -12.772
+autoplay = true
+
+[node name="Button" type="Button" parent="." unique_id=192067752]
+layout_mode = 0
+offset_left = 275.0
+offset_top = 432.0
+offset_right = 508.0
+offset_bottom = 505.0
+text = "LEMME TRY AGAIN!"
+
+[node name="Button2" type="Button" parent="." unique_id=1914507624]
+layout_mode = 0
+offset_left = 616.0
+offset_top = 434.0
+offset_right = 849.0
+offset_bottom = 505.0
+text = "rage quit"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

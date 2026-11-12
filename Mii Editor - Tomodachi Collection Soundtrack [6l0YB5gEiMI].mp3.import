@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://daqyhviwqxq01"
+path="res://.godot/imported/Mii Editor - Tomodachi Collection Soundtrack [6l0YB5gEiMI].mp3-84618803312971c2b6fe57505d41e752.mp3str"
+
+[deps]
+
+source_file="res://Mii Editor - Tomodachi Collection Soundtrack [6l0YB5gEiMI].mp3"
+dest_files=["res://.godot/imported/Mii Editor - Tomodachi Collection Soundtrack [6l0YB5gEiMI].mp3-84618803312971c2b6fe57505d41e752.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

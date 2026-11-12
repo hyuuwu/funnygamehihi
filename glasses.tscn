@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://cm5mehw6qs8ag"]
+
+[ext_resource type="Texture2D" uid="uid://dx40etcvt172b" path="res://pirate.png" id="1_1myfy"]
+[ext_resource type="Script" uid="uid://dwh27i1v8rnej" path="res://glasses.gd" id="1_6nicl"]
+[ext_resource type="AudioStream" uid="uid://cxwmuhx0dqhan" path="res://oh-my-god-meme.mp3" id="3_723oi"]
+
+[node name="Control" type="Control" unique_id=204198135]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6nicl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1905687175]
+position = Vector2(576, 324)
+texture = ExtResource("1_1myfy")
+
+[node name="Button" type="Button" parent="." unique_id=37292772]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 478.0
+offset_right = 716.0
+offset_bottom = 545.0
+text = "ok, i guess?"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=668172623]
+stream = ExtResource("3_723oi")
+volume_db = -8.875
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

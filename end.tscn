@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://iaprow44iasd"]
+
+[ext_resource type="Script" uid="uid://da2rwi74wit7n" path="res://end.gd" id="1_egc6y"]
+[ext_resource type="Texture2D" uid="uid://e5idjs7pqqmg" path="res://cavo.png" id="1_n735c"]
+
+[node name="Control" type="Control" unique_id=787226283]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_egc6y")
+
+[node name="Cavo" type="Sprite2D" parent="." unique_id=1337176561]
+position = Vector2(576, 324)
+texture = ExtResource("1_n735c")
+
+[node name="Button" type="Button" parent="." unique_id=1378750530]
+layout_mode = 0
+offset_left = 513.0
+offset_top = 522.0
+offset_right = 616.0
+offset_bottom = 553.0
+text = "thats it? bye"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
